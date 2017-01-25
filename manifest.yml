@@ -1,0 +1,20 @@
+---
+language: staticfile
+
+exclude_files:
+  - .git/
+  - .gitignore
+  - .gitmodules
+  - .rspec
+  - cf_spec/
+  - log/
+  - test/
+  - buildpack-packager/
+  - staticfile_buildpack-*v*.zip
+
+dependencies:
+  - name: nginx
+    version: 1.11.8
+    cf_stacks:
+      - cflinuxfs2
+
