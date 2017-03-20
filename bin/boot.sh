@@ -34,8 +34,6 @@ cat < $APP_ROOT/nginx/logs/access.log &
 
 chmod a+x $APP_ROOT/nginx/sbin/nginx
 
-ping -c 1 yourlearningstagewas.w3bmix.ibm.com
-
 exec $APP_ROOT/nginx/sbin/nginx -p $APP_ROOT/nginx -c $APP_ROOT/nginx/conf/nginx.conf
 
 # ------------------------------------------------------------------------------------------------

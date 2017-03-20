@@ -53,8 +53,6 @@ if [ ${build_dir}/public != ${root_dir_absolute} ]; then
 fi
 shopt -u extglob
 
-ping -c 1 yourlearningstagewas.w3bmix.ibm.com
-
 status "Setting up nginx"
 tar xzfi $compile_nginx_tgz
 cp -f $compile_buildpack_dir/conf/nginx.conf nginx/conf/nginx.conf
